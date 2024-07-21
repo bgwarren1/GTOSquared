@@ -1,26 +1,31 @@
 from PIL import Image, ImageTk
+import tkinter as tk
+import tkinter as ttk
 
 
-# Player object
-class Player:
-    def __init__(self, name, money, playerIcon):
-        self.name = name
-        self.money = money
+from player import Player
+
+
+class Board:
+    def __init__(self, root):
         
     
-    def playerTag(self):
-        return self.name + ': ' + self.money
+        root = tk.Tk() # create root window
+        root.title("Poker Solver Board")
+        
+        
+
+
+
+
     
 
 
 
 
-playerList = [] # List of players
 
-# Adding new players
-def addPlayer(name, money):
-    player = Player(name, money)
-    playerList.append(player)
+
+
 
 
 
